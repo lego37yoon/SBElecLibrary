@@ -1,0 +1,2 @@
+rootProject.name='Sinabro ElecLibrary'
+include ':app', ':geckoview-20160801004002', ':geckolibs-20160801004002'
