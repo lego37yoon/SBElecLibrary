@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sinabro ElecLibrary</string>
+    <string name="clock_default">9:00 PM</string>
+    <string name="date_default">1970.01.01 THU</string>
+    <string name="imgdesc_event">Event Icon</string>
+    <string name="event_null">No Events.</string>
 </resources>
