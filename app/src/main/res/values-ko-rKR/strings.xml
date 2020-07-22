@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 앱 기본 값 -->
     <string name="app_name">시나브로 전자책장</string>
     <string name="clock_default">오후 9:00</string>
     <string name="date_default">1970년 1월 1일 목요일</string>
-    <string name="imgdesc_event">일정 아이콘</string>
     <string name="event_null">예정된 일정이 없습니다.</string>
+    <string name="weather_null">날씨 정보가 없습니다.</string>
+    <string name="dustNull">미세먼지 정보가 없습니다.</string>
+    <string name="tabCount">1</string>
+    <string name="browserTitle">시나브로 브라우저</string>
+    <string name="browserHint">URL 혹은 검색어 입력</string>
+    <string name="mainBookReader">뷰어</string>
+    <string name="mainStore">서점</string>
+    <string name="netIntro">브라우저</string>
+    <string name="mainSettings">설정</string>
+    <string name="mainPrevPage">이전</string>
+    <string name="mainForwardPage">다음</string>
+    <string name="mainRefreshEInk">잔상제거</string>
+    <string name="mainNotiMenu">알림</string>
+
+    <!-- 설명문 -->
+
+    <!-- 아이콘에 대한 설명 -->
+    <string name="imgdesc_event">일정 아이콘</string>
+    <string name="imgdesc_weather">날씨 아이콘</string>
+    <string name="imgdesc_dust">미세먼지 아이콘</string>
+    <string name="imgdesc_exitBrowser">브라우저 종료하기</string>
+    <string name="imgdesc_settingsBrowser">브라우저 설정</string>
+    <string name="imgdesc_backBrowser">뒤로가기</string>
+    <string name="imgdesc_forwardBrowser">앞으로 가기</string>
+    <string name="imgdesc_secureIndicator">안전함</string>
+    <string name="imgdesc_insecureIndicator">안전하지 않음</string>
+    <string name="imgdesc_refreshBrowser">새로고침</string>
+    <string name="imgdesc_mainViewerIcon">메인 뷰어로 이동</string>
+    <string name="imgdesc_storeIcon">서점으로 이동</string>
+    <string name="imgdesc_netIcon">브라우저로 이동</string>
+    <string name="imgdesc_settingsIcon">설정으로 이동</string>
 </resources>

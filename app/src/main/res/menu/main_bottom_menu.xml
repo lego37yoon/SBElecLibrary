@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainPrevPage"
+        android:enabled="false"
+        android:icon="@drawable/ic_arrow_left"
+        android:title="@string/mainPrevPage" />
+    <item
+        android:id="@+id/mainForwardPage"
+        android:enabled="false"
+        android:icon="@drawable/ic_arrow_right"
+        android:title="@string/mainForwardPage" />
+    <item
+        android:id="@+id/mainRefreshEInk"
+        android:enabled="true"
+        android:icon="@drawable/ic_reload"
+        android:title="@string/mainRefreshEInk" />
+    <item
+        android:id="@+id/mainNotiMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_noti"
+        android:title="@string/mainNotiMenu" />
+</menu>

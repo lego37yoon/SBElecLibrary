@@ -1,7 +1,54 @@
 <resources>
+    <!-- App Default Values -->
     <string name="app_name">Sinabro ElecLibrary</string>
     <string name="clock_default">9:00 PM</string>
     <string name="date_default">1970.01.01 THU</string>
-    <string name="imgdesc_event">Event Icon</string>
     <string name="event_null">No Events.</string>
+    <string name="weather_null">Weather Information Not Provided</string>
+    <string name="dustNull">PM2.5 / PM10 Info Not Provided</string>
+    <string name="tabCount">1</string>
+    <string name="browserTitle">Sinabro Browser</string>
+    <string name="browserHint">URL or search keyword</string>
+    <string name="mainBookReader">Books</string>
+    <string name="mainStore">Store</string>
+    <string name="netIntro">Browser</string>
+    <string name="mainSettings">Settings</string>
+    <string name="mainPrevPage">Prev.</string>
+    <string name="mainForwardPage">Forward</string>
+    <string name="mainRefreshEInk">Refresh</string>
+    <string name="mainNotiMenu">Noti</string>
+
+    <!-- Descriptions -->
+
+    <!-- Contents Descriptions for Images -->
+    <string name="imgdesc_event">Event Icon</string>
+    <string name="imgdesc_weather">Weather Icon</string>
+    <string name="imgdesc_dust">PM2.5 PM10 Icon</string>
+    <string name="imgdesc_exitBrowser">Exit Browser</string>
+    <string name="imgdesc_settingsBrowser">Browser Settings</string>
+    <string name="imgdesc_backBrowser">Back</string>
+    <string name="imgdesc_forwardBrowser">Forward</string>
+    <string name="imgdesc_secureIndicator">Secure</string>
+    <string name="imgdesc_insecureIndicator">Insecure</string>
+    <string name="imgdesc_refreshBrowser">Refresh</string>
+    <string name="imgdesc_mainViewerIcon">Primary Book Viewer</string>
+    <string name="imgdesc_storeIcon">Go To Bookstore</string>
+    <string name="imgdesc_netIcon">Sinabro Browser Icon</string>
+    <string name="imgdesc_settingsIcon">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

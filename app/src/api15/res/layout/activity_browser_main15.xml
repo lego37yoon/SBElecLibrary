@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pw.pbdiary.sinabro.eleclibrary.browserMain15">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/browserExit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:contentDescription="@string/imgdesc_exitBrowser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_exit" />
+
+        <TextView
+            android:id="@+id/browserTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/browserTitle"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toStartOf="@+id/tabCount"
+            app:layout_constraintStart_toEndOf="@+id/browserExit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/browserSettings"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:contentDescription="@string/imgdesc_settingsBrowser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_settings" />
+
+        <Button
+            android:id="@+id/tabCount"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:text="@string/tabCount"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/browserSettings"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/browserAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/browserHint"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toStartOf="@+id/browserRefresh"
+            app:layout_constraintStart_toEndOf="@+id/browserSIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/tabCount" />
+
+        <ImageButton
+            android:id="@+id/browserBack"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:contentDescription="@string/imgdesc_backBrowser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/browserExit"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/browserForward"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:contentDescription="@string/imgdesc_forwardBrowser"
+            app:layout_constraintStart_toEndOf="@+id/browserBack"
+            app:layout_constraintTop_toBottomOf="@+id/browserExit"
+            app:srcCompat="@drawable/ic_arrow_right" />
+
+        <ImageView
+            android:id="@+id/browserSIndicator"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/imgdesc_secureIndicator"
+            app:layout_constraintStart_toEndOf="@+id/browserForward"
+            app:layout_constraintTop_toBottomOf="@+id/tabCount"
+            app:srcCompat="@drawable/ic_secure" />
+
+        <ImageButton
+            android:id="@+id/browserRefresh"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="72sp"
+            android:layout_height="72sp"
+            android:contentDescription="@string/imgdesc_refreshBrowser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/browserSettings"
+            app:srcCompat="@drawable/ic_refresh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <org.mozilla.gecko.GeckoView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
