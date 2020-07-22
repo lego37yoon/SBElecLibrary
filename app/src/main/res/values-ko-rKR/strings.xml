@@ -4,9 +4,9 @@
     <string name="app_name">시나브로 전자책장</string>
     <string name="clock_default">오후 9:00</string>
     <string name="date_default">1970년 1월 1일 목요일</string>
-    <string name="event_null">예정된 일정이 없습니다.</string>
     <string name="weather_null">날씨 정보가 없습니다.</string>
     <string name="dustNull">미세먼지 정보가 없습니다.</string>
+    <string name="lastUpdate">마지막 업데이트: 알 수 없음</string>
     <string name="tabCount">1</string>
     <string name="browserTitle">시나브로 브라우저</string>
     <string name="browserHint">URL 혹은 검색어 입력</string>

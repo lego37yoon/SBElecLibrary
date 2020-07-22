@@ -3,9 +3,9 @@
     <string name="app_name">Sinabro ElecLibrary</string>
     <string name="clock_default">9:00 PM</string>
     <string name="date_default">1970.01.01 THU</string>
-    <string name="event_null">No Events.</string>
     <string name="weather_null">Weather Information Not Provided</string>
     <string name="dustNull">PM2.5 / PM10 Info Not Provided</string>
+    <string name="lastUpdate">Last Update : NULL</string>
     <string name="tabCount">1</string>
     <string name="browserTitle">Sinabro Browser</string>
     <string name="browserHint">URL or search keyword</string>

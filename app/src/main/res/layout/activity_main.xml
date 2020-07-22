@@ -29,37 +29,15 @@
         app:layout_constraintTop_toBottomOf="@+id/clock_label" />
 
     <ImageView
-        android:id="@+id/eventIcon"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_label"
-        app:srcCompat="@drawable/ic_event"
-        android:contentDescription="@string/imgdesc_event" />
-
-    <TextView
-        android:id="@+id/eventLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/event_null"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/eventIcon"
-        app:layout_constraintTop_toBottomOf="@+id/date_label" />
-
-    <ImageView
         android:id="@+id/weatherIcon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/imgdesc_weather"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventIcon"
-        app:srcCompat="@drawable/ic_wi_day_sunny"
-        android:contentDescription="@string/imgdesc_weather"/>
+        app:layout_constraintTop_toBottomOf="@+id/date_label"
+        app:srcCompat="@drawable/ic_wi_day_sunny" />
 
     <TextView
         android:id="@+id/weatherLabel"
@@ -70,7 +48,7 @@
         android:text="@string/weather_null"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/weatherIcon"
-        app:layout_constraintTop_toBottomOf="@+id/eventLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/date_label" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -94,21 +72,33 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/weatherLabel" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lastUpdate"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dustLabel" />
+
     <!-- 레이아웃을 버튼 형태로 사용 (3개) -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/storeMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:layout_marginTop="24sp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="12dp"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="vertical"
         android:onClick="storeOnClick"
+        android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/readerMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dustLabel">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -138,15 +128,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12sp"
-        android:layout_marginTop="24sp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="12sp"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="vertical"
         android:onClick="readerOnClick"
+        android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/internetMenu"
         app:layout_constraintStart_toEndOf="@+id/storeMenu"
-        app:layout_constraintTop_toBottomOf="@+id/dustLabel">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -176,15 +166,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12sp"
-        android:layout_marginTop="24sp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="12sp"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="vertical"
         android:onClick="browserOnClick"
+        android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/settingsMenu"
         app:layout_constraintStart_toEndOf="@+id/readerMenu"
-        app:layout_constraintTop_toBottomOf="@+id/dustLabel">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -214,15 +204,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12sp"
-        android:layout_marginTop="24sp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24sp"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="vertical"
         android:onClick="settingsOnClick"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/internetMenu"
-        app:layout_constraintTop_toBottomOf="@+id/dustLabel">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
             android:id="@+id/imageView5"
