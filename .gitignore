@@ -16,3 +16,12 @@
 # Project exclude paths
 /geckolibs-20160801004002/build/
 /geckoview-20160801004002/build/
+/app/src/main/res/drawable-v24/ic_launcher_background.xml
+/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+/app/src/main/ic_launcher-playstore.png
+/app/src/main/res/mipmap-anydpi-v26
+/app/src/main/res/mipmap-hdpi
+/app/src/main/res/mipmap-mdpi
+/app/src/main/res/mipmap-xhdpi
+/app/src/main/res/mipmap-xxhdpi
+/app/src/main/res/mipmap-xxxhdpi
