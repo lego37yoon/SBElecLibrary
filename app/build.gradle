@@ -1,19 +1,14 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-ext {
-    geckoview_channel = "nightly"
-    geckoview_version = "80.0.20200716094032"
-}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "pw.pbdiary.sinabro.eleclibrary"
-        minSdkVersion 15
+        minSdkVersion 14
         targetSdkVersion 30
         versionCode 1
-        versionName "0.1"
+        versionName "0.1 Atlantis"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,40 +27,18 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
-    flavorDimensions 'api'
-    productFlavors {
-        api15 {
-            dimension 'api'
-            minSdkVersion 15
-            applicationIdSuffix ".ics"
-            versionCode 150001
-            versionName "0.1_ics"
-        }
-        api18 {
-            dimension 'api'
-            minSdkVersion 18
-            applicationIdSuffix ".jb"
-            versionCode 180001
-            versionName "0.1_jb43"
-        }
-    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.preference:preference:1.1.1'
     testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    api18Implementation 'org.mozilla.geckoview:geckoview-nightly:80.0.20200716094032'
-    api15Implementation project(path: ':geckoview-20160801004002')
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation "androidx.core:core-ktx:+"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
 }
 repositories {
     mavenCentral()

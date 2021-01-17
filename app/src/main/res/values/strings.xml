@@ -1,14 +1,11 @@
 <resources>
-    <!-- App Default Values -->
+    <!-- App Default Labeles -->
     <string name="app_name">Sinabro ElecLibrary</string>
     <string name="clock_default">9:00 PM</string>
     <string name="date_default">1970.01.01 THU</string>
     <string name="weather_null">Weather Information Not Provided</string>
     <string name="dustNull">PM2.5 / PM10 Info Not Provided</string>
     <string name="lastUpdate">Last Update : NULL</string>
-    <string name="tabCount">1</string>
-    <string name="browserTitle">Sinabro Browser</string>
-    <string name="browserHint">URL or search keyword</string>
     <string name="mainBookReader">Books</string>
     <string name="mainStore">Store</string>
     <string name="netIntro">Browser</string>
@@ -17,8 +14,31 @@
     <string name="mainForwardPage">Forward</string>
     <string name="mainRefreshEInk">Refresh</string>
     <string name="mainNotiMenu">Noti</string>
+    <string name="titleStoreList">Stores</string>
+    <string name="storeRidi">RIDIBOOKS</string>
+    <string name="storeYes24">Yes24</string>
+    <string name="storeAladin">Aladin</string>
+    <string name="storeKyobo">Kyobo</string>
+    <string name="storeBc">Bookcube</string>
+    <string name="storeInterpark">Interpark</string>
+    <string name="storeY2books">ReadingRak</string>
+    <string name="storeAmazon">Amazon</string>
+    <string name="storeDefault">Set this store as default and DONT ask more</string>
+    <string name="storeCustom">Custom</string>
+    <string name="storeCName">Store Name</string>
+    <string name="storeCAddress">Store URL</string>
+    <string name="storeCustomDesc">This store will be set to default and can edit this value at App Settings.</string>
+    <string name="title_activity_settings">App Settings</string>
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
-    <!-- Descriptions -->
+    <!-- Toasts -->
 
     <!-- Contents Descriptions for Images -->
     <string name="imgdesc_event">Event Icon</string>
@@ -35,20 +55,4 @@
     <string name="imgdesc_storeIcon">Go To Bookstore</string>
     <string name="imgdesc_netIcon">Sinabro Browser Icon</string>
     <string name="imgdesc_settingsIcon">Settings</string>
-    <string name="title_activity_settings">SettingsActivity</string>
-
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
